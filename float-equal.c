@@ -1,6 +1,7 @@
 //实现代码判断2个float变量相等
 //误差精确到时小数点后5位
 #include <stdio.h>
+#include <math.h>
 #define ESP 0.00001 
 int main()
 {
