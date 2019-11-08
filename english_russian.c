@@ -1,8 +1,20 @@
-//一个旅行社有 72 人，其中会英语的有 48 人，会俄语的有 36 人，两样都不会的有 8 人，两样都会的有
-//_______个。
-//编程：输入旅行社有72人
-//     输入会英语48人
-//     输入会俄语36人
-//     输入两样都不会有8人
-//     输出两样都会的有   人 
-//     输出：输入数据错误，无法计算
+#include <stdio.h>
+int main(void)
+{   
+   int a, b, c, d, e;
+   
+   printf("�ܹ��ж�����:");     scanf("%d", &a); 
+   printf("Ӣ��:");             scanf("%d", &b);  
+   printf("����:");             scanf("%d", &c);  
+   printf("ɶҲ����ķ���:");   scanf("%d", &d);  
+   
+   e = b + c + d - a;
+   
+   if (a < b || a < c || a < d || b < e || c < e || e < 0)
+      printf("�������ݴ����޷�����");
+   else 
+      printf("�����������%d��", e);
+	  
+	return 0;    
+}
+     
